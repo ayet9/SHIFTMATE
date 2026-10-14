@@ -63,7 +63,7 @@ MODULE                                         	FUNCTIONAL REQUIREMENTS
 2.5 System Architecture
   SHIFTMATE follows a web-based client-server architecture composed of the browser, application server, and database. The browser serves as the interface where users access the system, view schedules, submit requests, and receive notifications. The application server processes user requests, manages the system's business logic, and handles communication between the browser and database. The database stores and manages important system information such as user accounts, employee schedules, shift assignments, and requests. When a user performs an action, the browser sends the request to the application server, which processes the request and communicates with the database when data needs to be retrieved or updated. The processed information is then returned to the browser and displayed to the user.
 
-Development Tools and Technologies
+2.9 Development Tools and Technologies
 Tools/Technologies	Description
 HTML (HyperText Markup Language)	Used to structure the content and elements of the web pages.
 CSS (Cascading Style Sheets)	Used to design and style the system's user interface.
