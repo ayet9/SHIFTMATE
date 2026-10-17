@@ -3,8 +3,11 @@
 CHAPTER 1 – INTRODUCTION
 
 1.1 Background of the Project
-  Employee scheduling is an important part of managing a business because it helps ensure that employees know when they are expected to work. However, some businesses still manage employee schedules through paper records, chat messages, or spreadsheets. 
-    To address these concerns, SHIFTMATE: Employee Shift Scheduling System is proposed as an organized platform for managing employee schedules and schedule-related requests. The system allows managers or administrators to create and assign shifts, while employees can view their assigned schedules and submit requests for rest-day changes or emergency absences. 
+  Employee scheduling is an important part of workforce management because it helps businesses organize work assignments, allocate working hours, and ensure that employees are available when needed. According to Ernst et al. [1], staff scheduling is an important area of workforce planning, particularly for organizations that need to balance operational requirements with employee availability and scheduling needs.
+	Managing schedules manually through paper records, spreadsheets, or group messages may make it difficult to communicate schedule changes and organize employee requests. Existing employee scheduling platforms, such as Homebase, provide tools for creating schedules, managing shifts, and notifying employees about schedule updates [2]. These features demonstrate how digital scheduling systems can support communication and coordination between managers and employees.
+	To address these concerns, SHIFTMATE: Employee Shift Scheduling System is proposed as a web-based application designed to help businesses manage employee schedules and schedule-related requests. The system allows managers or administrators to create and update schedules, assign shifts, and review employee requests. Employees can view their assigned schedules and rest days, submit rest-day change requests, and file emergency absence requests. The system also provides email and web push notifications to inform employees about important schedule updates.
+	Through these functions, SHIFTMATE aims to provide an organized and accessible platform for managing employee schedules and communicating schedule-related information. The system is intended to help reduce confusion caused by scattered schedule information and provide a more convenient way for managers and employees to handle scheduling activities.
+ 
     
 1.2 Statement of the Problem
   Businesses that rely on manual methods such as paper, chat messages, or spreadsheets for employee scheduling may experience difficulty in maintaining organized schedules and communicating schedule changes to employees.
