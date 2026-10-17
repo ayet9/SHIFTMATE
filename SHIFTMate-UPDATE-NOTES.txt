@@ -1,0 +1,25 @@
+ShiftMate UI and persistence update
+
+Changes in this package:
+- Added a sign-out button in the top bar as well as the sidebar sign-out action.
+- Sign-out calls POST /api/logout, clears the stored Sanctum token, and returns to the login page. Saved database records are not deleted.
+- Added role-aware navigation: admin/manager tools are hidden from employee UI; employees are directed to their own schedule and My Requests.
+- Employee schedule and request list endpoints return records scoped to the logged-in employee where a linked employee profile exists.
+- Added employee self-service forms for rest-day change and emergency absence requests, plus a request history panel.
+- Fixed rest-day requested-date validation naming and made absence description mass-assignable.
+- Added subtle hover transitions and responsive request actions.
+
+Important setup notes:
+1. Extract the ZIP and open the Laravel project root (the folder containing artisan) in VS Code.
+2. Configure .env for your MySQL database.
+3. Run composer install if vendor/ is missing.
+4. Run php artisan key:generate only if APP_KEY is empty.
+5. Run php artisan migrate. If you already have a populated database, back it up first; edited migration files do not alter tables that have already migrated.
+6. Run php artisan serve and open http://127.0.0.1:8000/shiftmate-ui/.
+7. Admin/manager data changes are sent to Laravel API endpoints; records persist in MySQL when the API confirms success. Do not clear/drop the database to update the frontend.
+8. For employee request submission, the admin must first create/link an Employees record with user_id equal to the employee's users.id.
+
+Limitations to configure/verify separately:
+- Email and Web Push delivery require mail provider and VAPID/service-worker configuration; this package does not claim that real email/push delivery has been verified.
+- UI role visibility is not a replacement for complete server-side authorization on every write endpoint. Review API permissions before deploying to a public server.
+- Existing databases require proper schema migrations if you need changes to already-created columns.
