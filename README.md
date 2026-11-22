@@ -1,5 +1,8 @@
 # SHIFTMATE: Employee Shift Scheduling System
 
+Other github Repository link
+https://github.com/TevesRey/Shift_System.git 
+
 Documentation Google Docs link
 https://docs.google.com/document/d/1ySmGv3xi8Z-eJObzsNMcg2VmCs38tbsd/edit?usp=sharing&ouid=109663179994546808243&rtpof=true&sd=true
 
